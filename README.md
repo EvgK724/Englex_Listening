@@ -10,6 +10,8 @@ Practice: first listening with hidden text, optional dictation, retelling, playb
 
 The shell and texts are cached by a service worker. Users may save individual audio tracks, one course or all audio. Cached MP3s support byte ranges for Safari. Offline readiness is based on files actually stored; partial downloads can be resumed. Progress and notes are stored locally and can be exported/imported as JSON. Clearing website data may remove both progress and downloads. Different browsers, devices and Home Screen apps may have separate storage.
 
+Recordings can be removed from the local library into Trash, then restored individually or all at once. Removing a recording also removes its downloaded audio, while keeping notes, saved fragments and repetition history. Removed recordings are excluded from practice and bulk downloads. A separate control removes only the offline copy. Trash state is included in progress backups; restoring a recording does not automatically download audio again. Source files on GitHub are unchanged.
+
 ## Build
 
 Python 3 with mutagen, and imageio-ffmpeg to extract video sound:
